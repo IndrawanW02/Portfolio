@@ -1,0 +1,59 @@
+.project-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 0;
+  margin: calc((100vh - 40vh - 3rem) / 2) 0;
+  margin-bottom: calc((100vh - 40vh - 3rem) / 2 + 25vh);
+}
+
+.project-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.project-information {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-image-container {
+  width: 52%;
+}
+
+.project-desc {
+  width: 42.5%;
+}
+
+/* Portrait phones and down */
+@media (max-width: 480px) {
+  .project-section {
+    margin-bottom: calc((100svh - 60svh - 3rem) / 2);
+  }
+
+  .project-information {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .project-image-container {
+    width: 100%;
+  }
+
+  .project-desc {
+    width: 100%;
+  }
+}

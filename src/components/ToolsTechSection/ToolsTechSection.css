@@ -1,0 +1,48 @@
+.tool-tech-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 0;
+  margin-bottom: calc((100vh - 45vh - 3rem) / 2 + 25vh);
+}
+
+.tool-tech-container {
+  width: calc(100vw - 16rem - 20vw);
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem 0;
+  align-items: center;
+  justify-items: center;
+
+  --s: 8rem; /* the size on the corner */
+  --t: 1rem; /* the thickness of the border */
+  --g: 4rem; /* the gap between the border and image */
+
+  padding: 7rem calc(var(--g) + var(--t));
+  outline: var(--t) solid var(--accent-color); /* the color here */
+  outline-offset: calc(-1 * var(--t));
+  mask: inherit;
+  -webkit-mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+      calc(100% - var(--s)) calc(100% - var(--s)),
+    linear-gradient(#000 0 0) content-box;
+}
+
+/* Portrait phones and down */
+@media (max-width: 480px) {
+  .tool-tech-section {
+    margin-bottom: calc((100svh - 60svh - 3rem) / 2);
+  }
+
+  .tool-tech-container {
+    width: calc(100vw - 8rem);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    --s: 8rem; /* the size on the corner */
+    --t: 1rem; /* the thickness of the border */
+    --g: 1rem; /* the gap between the border and image */
+  }
+}

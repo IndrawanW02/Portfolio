@@ -1,0 +1,48 @@
+.gradient-border-mask {
+  width: 70%;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 24px -1px rgba(81, 177, 132, 0.2);
+  transition: box-shadow 0.5s ease;
+}
+
+.card-container {
+  aspect-ratio: 1/1;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f5fa;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(245, 245, 250, 0.4),
+    rgba(145, 145, 148, 0.1)
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(245, 245, 250, 0.4),
+    rgba(145, 145, 148, 0.1)
+  );
+
+  border: 2px solid;
+  border-image: linear-gradient(
+    135deg,
+    rgba(245, 245, 250, 1),
+    rgba(102, 102, 102, 0.5)
+  );
+  border-image-slice: 1;
+}
+
+.logo {
+  width: 55%;
+  height: 55%;
+}
+
+/* Portrait phones and down */
+@media (max-width: 480px) {
+  .gradient-border-mask {
+    width: 80%;
+  }
+}

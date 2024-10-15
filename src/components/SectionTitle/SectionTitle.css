@@ -1,0 +1,28 @@
+.section-title {
+  position: relative;
+  font-family: "Silkscreen";
+  font-size: 6rem;
+
+  margin-bottom: 8rem;
+  white-space: nowrap;
+}
+
+.section-title::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: -1;
+  background: linear-gradient(#51b184 30%, #224b38 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Portrait phones and down */
+@media (max-width: 480px) {
+  .section-title {
+    text-wrap: wrap;
+    text-align: center;
+  }
+}

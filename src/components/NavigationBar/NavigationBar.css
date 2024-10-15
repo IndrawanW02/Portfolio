@@ -1,0 +1,39 @@
+nav {
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4rem
+}
+
+.portofolio-title {
+  font-family: "Silkscreen";
+  font-size: 4rem;
+  background: linear-gradient(#51B184 40%, #224B38 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem
+}
+
+
+a {
+  text-decoration: none;
+
+  font-family: "Arvo";
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
