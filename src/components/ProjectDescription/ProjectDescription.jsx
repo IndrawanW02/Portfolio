@@ -27,11 +27,24 @@ function ProjectDescription({ selectedProject }) {
     Imaginary: ["React.js", "Express.js"],
   };
 
+  const githubProject = {
+    FootLockRe: ["https://github.com/IndrawanW02/FootLockRE"],
+    Chantel: ["https://github.com/IndrawanW02/CHANTEL"],
+    SANTARA: ["https://github.com/IndrawanW02/SANTARA-Marketplace"],
+    MakeMeUpzz: ["https://github.com/IndrawanW02/MakeMeUpzz_Group1"],
+    Imaginary: ["https://github.com/IndrawanW02/Imaginary"],
+  }
+
   return (
     <>
       <div className="productdesc-border-mask-1">
         <div className="productdesc-border-mask-2">
-          <h2 className="title">{selectedProject}</h2>
+          <div className="title-content">
+            <h2 className="title">{selectedProject}</h2>
+            <a href={githubProject[selectedProject]} target="_blank" className="github-redirect">
+              <img src="src/assets/icons/github.svg" className="github-logo"></img>
+            </a>
+          </div>
           <div className="tools-set">
             {usedTools[selectedProject].map((tools, index) => {
               return (

@@ -92,3 +92,13 @@
 .picture-nav::-webkit-scrollbar-thumb {
   background: rgba(245, 245, 250, 0.5);
 }
+
+@media (max-width: 480px) {
+  .picture-nav {
+    /* display: none; */
+  }
+
+  .picture-display > img {
+    /* aspect-ratio: 2 / 3; */
+  }
+}

@@ -10,22 +10,37 @@ function ProjectNavigation({ selectedProject, setSelectedProject }) {
     "Imaginary",
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
-      <ul className="project-sect-nav">
-        {projectList.map((projectName, index) => {
-          return (
-            <li
-              key={index}
-              className={`project ${
-                projectName === selectedProject ? "active" : ""
-              }`}
-              onClick={() => setSelectedProject(projectName)}>
-              {projectName}
-            </li>
-          );
-        })}
-      </ul>
+      <div className="dropdown">
+        <div className="select" onClick={handleClick}>
+          <span className="selected">{selectedProject}</span>
+          <div className={isOpen ? "caret rotate" : "caret"}></div>
+        </div>
+        <ul className={isOpen ? "project-sect-nav open" : "project-sect-nav"}>
+          {projectList.map((projectName, index) => {
+            return (
+              <li
+                key={index}
+                className={`project ${
+                  projectName === selectedProject ? "active" : ""
+                }`}
+                onClick={() => {
+                  setSelectedProject(projectName);
+                  setIsOpen(!isOpen);
+                }}
+              >
+                {projectName}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </>
   );
 }

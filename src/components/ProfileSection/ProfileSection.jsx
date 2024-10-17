@@ -6,7 +6,7 @@ function ProfileSection() {
       <div className="profile-section">
         <div className="profile-desc">
           <h1>
-            Hey, I'm <span>Indrawan Wijaya</span>
+            Hey, I'm <span className="profile-name">Indrawan Wijaya</span>
           </h1>
           <p>
             A Computer Science student at BINUS University, focusing on software

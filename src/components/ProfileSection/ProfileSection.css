@@ -14,10 +14,10 @@
 
 h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-span {
+.profile-name {
   background: linear-gradient(#51b184 40%, #224b38 100%);
   background-clip: content-box;
   -webkit-background-clip: text;
@@ -97,13 +97,15 @@ p {
 /* Portrait phones and down */
 @media (max-width: 480px) {
   .profile-section {
-    height: 55svh;
+    height: auto;
     flex-direction: column-reverse;
-    margin: calc((100svh - 60svh - 3rem) / 2) 2rem;
+    gap: 10rem;
+    margin: calc((100svh - 65svh - 3rem) / 2) 2rem;
+    margin-bottom: calc((100svh - 60svh - 3rem) / 2);
   }
 
   .profile-avatar-container {
-    width: 90%;
+    width: 75%;
     height: auto;
     display: flex;
     align-items: flex-end;

@@ -35,6 +35,10 @@ body {
   :root {
     font-size: 6px;
   }
+
+  body {
+    padding: 3rem;
+  }
 }
 
 /* Landscape phone to portrait tablet */

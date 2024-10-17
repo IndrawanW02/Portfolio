@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   padding: 5vh 0;
-  margin-bottom: calc((100vh - 45vh - 3rem) / 2 + 25vh);
+  margin: calc((100vh - 40vh - 3rem) / 2) 0;
+  /* margin-bottom: calc((100vh - 45vh - 3rem) / 2 + 25vh); */
 }
 
 .tool-tech-container {
@@ -33,7 +34,7 @@
 /* Portrait phones and down */
 @media (max-width: 480px) {
   .tool-tech-section {
-    margin-bottom: calc((100svh - 60svh - 3rem) / 2);
+    /* margin: calc((100svh - 60svh - 3rem) / 2) 0; */
   }
 
   .tool-tech-container {

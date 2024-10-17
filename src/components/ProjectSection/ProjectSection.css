@@ -6,7 +6,7 @@
   justify-content: center;
   padding: 5vh 0;
   margin: calc((100vh - 40vh - 3rem) / 2) 0;
-  margin-bottom: calc((100vh - 40vh - 3rem) / 2 + 25vh);
+  /* margin-bottom: calc((100vh - 40vh - 3rem) / 2 + 25vh); */
 }
 
 .project-nav {
@@ -40,10 +40,6 @@
 
 /* Portrait phones and down */
 @media (max-width: 480px) {
-  .project-section {
-    margin-bottom: calc((100svh - 60svh - 3rem) / 2);
-  }
-
   .project-information {
     flex-direction: column;
     gap: 8rem;
