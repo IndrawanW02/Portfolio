@@ -2,16 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import "./ProjectImage.css";
 
 function ProjectImage({ selectedProject }) {
-  // const projectThumbnail = {
-  //   FootLockRe: ["../src/assets/pictures/FootLockRe_1.png"],
-  //   Chantel: ["../src/assets/pictures/Chantel_1.png"],
-  //   SANTARA: ["../src/assets/pictures/SANTARA_1.png"],
-  //   MakeMeUpzz: ["../src/assets/pictures/MakeMeUpzz_1.png"],
-  // };
-
   const scrollableRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(
-    "src/assets/pictures/FootLockRe_1.png"
+    "assets/pictures/FootLockRe_1.png"
   );
 
   const handleThumbnailClick = (image) => {
@@ -25,7 +18,7 @@ function ProjectImage({ selectedProject }) {
   };
 
   useEffect(() => {
-    setSelectedImage(`src/assets/pictures/${selectedProject}_1.png`);
+    setSelectedImage(`assets/pictures/${selectedProject}_1.png`);
     resetScroll();
   }, [selectedProject]);
 
@@ -39,7 +32,7 @@ function ProjectImage({ selectedProject }) {
         </div>
         <div className="picture-nav" ref={scrollableRef}>
           {Array.from({ length: 5 }, (_, index) => {
-            const imageUrl = `src/assets/pictures/${selectedProject}_${
+            const imageUrl = `assets/pictures/${selectedProject}_${
               index + 1
             }.png`;
             return (

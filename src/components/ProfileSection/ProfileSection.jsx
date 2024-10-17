@@ -19,7 +19,7 @@ function ProfileSection() {
           <div className="profile-image-container">
             <img
               className="profile-pic"
-              src="src/assets/pictures/ProfilePicture.png"
+              src="assets/pictures/ProfilePicture.png"
               alt="Indrawan Wijaya"></img>
           </div>
           <div className="background-layer"></div>

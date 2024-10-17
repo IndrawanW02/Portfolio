@@ -94,11 +94,5 @@
 }
 
 @media (max-width: 480px) {
-  .picture-nav {
-    /* display: none; */
-  }
-
-  .picture-display > img {
-    /* aspect-ratio: 2 / 3; */
-  }
+  
 }

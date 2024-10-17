@@ -42,7 +42,7 @@ function ProjectDescription({ selectedProject }) {
           <div className="title-content">
             <h2 className="title">{selectedProject}</h2>
             <a href={githubProject[selectedProject]} target="_blank" className="github-redirect">
-              <img src="src/assets/icons/github.svg" className="github-logo"></img>
+              <img src="assets/icons/github.svg" className="github-logo"></img>
             </a>
           </div>
           <div className="tools-set">
