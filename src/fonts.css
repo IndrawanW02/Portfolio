@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Silkscreen";
-  src: url(assets/fonts/Silkscreen/Silkscreen-Regular.ttf) format("truetype");
+  src: url(../public/assets/fonts/Silkscreen/Silkscreen-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Arvo";
-  src: url(assets/fonts/Arvo/Arvo-Regular.ttf) format("truetype");
+  src: url(../public/assets/fonts/Arvo/Arvo-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Arvo";
-  src: url(assets/fonts/Arvo/Arvo-Bold.ttf) format("truetype");
+  src: url(../public/assets/fonts/Arvo/Arvo-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
 }
