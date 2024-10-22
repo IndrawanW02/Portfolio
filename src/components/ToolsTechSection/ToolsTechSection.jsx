@@ -7,7 +7,7 @@ function ToolsTechSection() {
     <>
       <section id="ToolsTechSection">
         <div className="tool-tech-section">
-          <SectionTitle title="Tools & Technologies"></SectionTitle>
+          <SectionTitle title="Tools & Technologies" subtitle="The following are some of the tools and technologies I have experience working with."></SectionTitle>
           <div className="tool-tech-container">
             <ToolsTechCard
               iconPath={"assets/icons/C.svg"}></ToolsTechCard>

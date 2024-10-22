@@ -12,7 +12,7 @@ function ProjectSection() {
     <>
       <section id="ProjectSection">
         <div className="project-section">
-          <SectionTitle title="Projects"></SectionTitle>
+          <SectionTitle title="Projects" subtitle="The following are some of the projects I have worked on."></SectionTitle>
           <div className="project-container">
             <div className="project-nav">
               <ProjectNavigation

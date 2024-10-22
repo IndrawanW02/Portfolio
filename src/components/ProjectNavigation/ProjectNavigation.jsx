@@ -18,11 +18,11 @@ function ProjectNavigation({ selectedProject, setSelectedProject }) {
   return (
     <>
       <div className="dropdown">
-        <div className="select" onClick={handleClick}>
+        <div className={isOpen? "select open" : "select"} onClick={handleClick}>
           <span className="selected">{selectedProject}</span>
           <div className={isOpen ? "caret rotate" : "caret"}></div>
         </div>
-        <ul className={isOpen ? "project-sect-nav open" : "project-sect-nav"}>
+        <ul className={isOpen? "project-sect-nav open" : "project-sect-nav"}>
           {projectList.map((projectName, index) => {
             return (
               <li
