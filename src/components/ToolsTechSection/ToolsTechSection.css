@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5vh 0;
+  padding: 5vh 4rem;
   margin: calc((100vh - 40vh - 3rem) / 2) 0;
   /* margin-bottom: calc((100vh - 45vh - 3rem) / 2 + 25vh); */
 }
 
 .tool-tech-container {
-  width: calc(100vw - 16rem - 20vw);
+  width: 85%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -20,7 +20,7 @@
 
   --s: 8rem; /* the size on the corner */
   --t: 1rem; /* the thickness of the border */
-  --g: 4rem; /* the gap between the border and image */
+  --g: 0rem; /* the gap between the border and image */
 
   padding: 7rem calc(var(--g) + var(--t));
   outline: var(--t) solid var(--accent-color); /* the color here */
@@ -38,12 +38,26 @@
   }
 
   .tool-tech-container {
-    width: calc(100vw - 8rem);
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
 
     --s: 8rem; /* the size on the corner */
     --t: 1rem; /* the thickness of the border */
     --g: 1rem; /* the gap between the border and image */
+  }
+}
+
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tool-tech-container {
+    width: calc(100vw - 0);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    --s: 8rem;
+    --t: 1rem; 
+    --g: 1rem; 
   }
 }

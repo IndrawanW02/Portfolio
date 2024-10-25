@@ -33,7 +33,7 @@ body {
 /* Portrait phones and down */
 @media (max-width: 480px) {
   :root {
-    font-size: 6px;
+    font-size: 6.5px;
   }
 
   body {
@@ -42,16 +42,35 @@ body {
 }
 
 /* Landscape phone to portrait tablet */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px){
   :root {
-    font-size: 8px;
+    font-size: 9px;
+  }
+
+  body {
+    padding: 3rem;
   }
 }
 
+/* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   :root {
     font-size: 10px;
+  }
+
+  body {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  :root {
+    font-size: 10px;
+  }
+
+  body {
+    padding: 10rem;
   }
 }
 
