@@ -40,10 +40,3 @@
   width: 55%;
   height: 55%;
 }
-
-/* Portrait phones and down */
-@media (max-width: 480px) {
-  .gradient-border-mask {
-    width: 80%;
-  }
-}

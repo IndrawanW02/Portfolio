@@ -23,7 +23,7 @@
   --g: 0rem; /* the gap between the border and image */
 
   padding: 7rem calc(var(--g) + var(--t));
-  outline: var(--t) solid var(--accent-color); /* the color here */
+  outline: var(--t) solid var(--accent-color); 
   outline-offset: calc(-1 * var(--t));
   mask: inherit;
   -webkit-mask: conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
@@ -33,18 +33,14 @@
 
 /* Portrait phones and down */
 @media (max-width: 480px) {
-  .tool-tech-section {
-    /* margin: calc((100svh - 60svh - 3rem) / 2) 0; */
-  }
-
   .tool-tech-container {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
 
-    --s: 8rem; /* the size on the corner */
-    --t: 1rem; /* the thickness of the border */
-    --g: 1rem; /* the gap between the border and image */
+    --s: 8rem; 
+    --t: 1rem; 
+    --g: 1rem; 
   }
 }
 
@@ -52,7 +48,7 @@
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1024px) {
   .tool-tech-container {
-    width: calc(100vw - 0);
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 

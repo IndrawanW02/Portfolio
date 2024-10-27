@@ -1,13 +1,17 @@
 import "./ToolsTechCard.css";
 
-function ToolsTechCard({ iconPath }) {
+import RevealCard from "../RevealAnimation/RevealCard";
+
+function ToolsTechCard({ iconPath, index }) {
   return (
     <>
-      <div className="gradient-border-mask">
-        <div className="card-container">
-          <img className="logo" src={iconPath}></img>
+      <RevealCard index={index}>
+        <div className="gradient-border-mask">
+          <div className="card-container">
+            <img className="logo" src={iconPath}></img>
+          </div>
         </div>
-      </div>
+      </RevealCard>
     </>
   );
 }

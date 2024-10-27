@@ -1,5 +1,7 @@
 import "./ProjectDescription.css";
 
+import RevealText from "../RevealAnimation/RevealText";
+
 function ProjectDescription({ selectedProject }) {
   const projectDesc = {
     FootLockRe: [
@@ -33,29 +35,38 @@ function ProjectDescription({ selectedProject }) {
     SANTARA: ["https://github.com/IndrawanW02/SANTARA-Marketplace"],
     MakeMeUpzz: ["https://github.com/IndrawanW02/MakeMeUpzz_Group1"],
     Imaginary: ["https://github.com/IndrawanW02/Imaginary"],
-  }
+  };
 
   return (
     <>
       <div className="productdesc-border-mask-1">
         <div className="productdesc-border-mask-2">
-          <div className="title-content">
-            <h2 className="title">{selectedProject}</h2>
-            <a href={githubProject[selectedProject]} target="_blank" className="github-redirect">
-              <img src="assets/icons/github.svg" className="github-logo"></img>
-            </a>
-          </div>
-          <div className="tools-set">
-            {usedTools[selectedProject].map((tools, index) => {
-              return (
-                <div key={index} className="tools-card">
-                  {tools}
-                </div>
-              );
-            })}
-          </div>
+          <RevealText delay={0.25}>
+            <div className="title-content">
+              <h2 className="title">{selectedProject}</h2>
+              <a
+                href={githubProject[selectedProject]}
+                target="_blank"
+                className="github-redirect"
+              >
+                <img
+                  src="assets/icons/github.svg"
+                  className="github-logo"
+                ></img>
+              </a>
+            </div>
+            <div className="tools-set">
+              {usedTools[selectedProject].map((tools, index) => {
+                return (
+                  <div key={index} className="tools-card">
+                    {tools}
+                  </div>
+                );
+              })}
+            </div>
 
-          <p className="desc">{projectDesc[selectedProject]}</p>
+            <p className="desc">{projectDesc[selectedProject]}</p>
+          </RevealText>
         </div>
       </div>
     </>
